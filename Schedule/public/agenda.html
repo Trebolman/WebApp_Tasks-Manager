@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Agenda iPlain</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <link rel="stylesheet" href="css/iStyle.css"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Gamja+Flower" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Charmonman|Dancing+Script|Pacifico|Shadows+Into+Light" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-black-50 text-center m-0">REGISTRO DE TAREAS AGENDA iPLAIN</h1>
+            </div>
+        </div>
+
+        <!-- Registro de tareas -->
+        <div class="row bg-dark">
+            <div class="col-md-12 mt-3 mb-0">
+
+                <!-- Modals -->
+                <div class="modal fade" id="modalTaskRegister" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header text-center">
+                                <h4 class="modal-title w-100 font-weight-bold">Ingrese tarea</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body mx-3">
+                                <div class="md-form mb-5">
+                                    <i class="fa fa-text-height" aria-hidden="true"></i>
+                                    <label data-error="wrong" data-success="right" for="form3">Nombre de la tarea</label>
+                                    <input type="text" id="form3" class="form-control validate" name="name">
+                                </div>
+
+                                <div class="md-form mb-4">
+                                    <i class="fa fa-tasks" aria-hidden="true"></i>
+                                    <!-- <input type="tex" id="form2" class="form-control validate"> -->
+                                    <label data-error="wrong" data-success="right" for="form2">Describe tu tarea:</label>
+                                    <textarea name="description" class="form-control validate" id="" cols="30" rows="3"></textarea>
+                                </div>
+
+                            </div>
+                            <div class="modal-footer d-flex justify-content-center">
+                                <button id="btnSubmit" class="btn btn-indigo" data-dismiss="modal">Registrar tarea <i class="fa fa-paper-plane-o ml-1"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <a href="" class="btn btn-danger btn-block btn-rounded mb-4" data-toggle="modal" data-target="#modalTaskRegister">Registrar
+                        tarea</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Lista de tareas agregadas -->
+        <div class="row bg-dark">
+            <div class="col-md-12">
+                <div class="row bg-dark p-3">
+                    <label for="" class="text-white pl-2">LISTA DE TAREAS</label>
+                    <table class="table table-bordered bg-light" id="miTabla">
+                        <thead class="bg-danger">
+                            <tr class="text-center">
+                                <th>#</th>
+                                <th>Tarea</th>
+                                <th>Descripcion</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                    </table>
+
+                </div>
+
+            </div>
+        </div>
+
+        <i class="far fa-h3 text-black-50 m-0">By itrebolsoft</i>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/ajax2.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
